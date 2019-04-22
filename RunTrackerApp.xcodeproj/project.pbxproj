@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18645D81226E25C7003E97A8 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18645D80226E25C7003E97A8 /* StopwatchViewController.swift */; };
 		1872FAA82268DB34007B2DD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872FAA72268DB34007B2DD3 /* AppDelegate.swift */; };
 		1872FAAA2268DB34007B2DD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872FAA92268DB34007B2DD3 /* ViewController.swift */; };
 		1872FAAD2268DB34007B2DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872FAAB2268DB34007B2DD3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18645D80226E25C7003E97A8 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		1872FAA42268DB34007B2DD3 /* RunTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1872FAA72268DB34007B2DD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1872FAA92268DB34007B2DD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				1872FAA72268DB34007B2DD3 /* AppDelegate.swift */,
 				1872FAA92268DB34007B2DD3 /* ViewController.swift */,
 				1872FAAB2268DB34007B2DD3 /* Main.storyboard */,
+				18645D80226E25C7003E97A8 /* StopwatchViewController.swift */,
 				1872FAAE2268DB35007B2DD3 /* Assets.xcassets */,
 				1872FAB02268DB35007B2DD3 /* LaunchScreen.storyboard */,
 				1872FAB32268DB35007B2DD3 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18645D81226E25C7003E97A8 /* StopwatchViewController.swift in Sources */,
 				1872FAAA2268DB34007B2DD3 /* ViewController.swift in Sources */,
 				1872FAA82268DB34007B2DD3 /* AppDelegate.swift in Sources */,
 			);
