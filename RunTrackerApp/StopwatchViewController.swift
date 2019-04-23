@@ -28,8 +28,8 @@ class StopwatchViewController: UIViewController {
     }
     
     @IBAction func pauseTimer(_ sender: Any) {
-        startButton.isEnabled = false
-        pauseButton.isEnabled = true
+        startButton.isEnabled = true
+        pauseButton.isEnabled = false
         timer.invalidate()
         isPlaying = false
     }

@@ -152,18 +152,12 @@
         <!--Stopwatch View Controller-->
         <scene sceneID="gJl-PE-FdC">
             <objects>
-                <viewController id="Lh1-Mg-Yhr" customClass="StopwatchViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lh1-Mg-Yhr" customClass="StopwatchViewController" customModule="RunTrackerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pP3-gT-OhI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Stopwatch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cu-cr-89l">
-                                <rect key="frame" x="85" y="49" width="206" height="44"/>
-                                <color key="backgroundColor" red="0.5136045145" green="1" blue="0.20933802069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="38"/>
-                                <color key="highlightedColor" red="0.5136045145" green="1" blue="0.20933802069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nw-bc-kFO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nw-bc-kFO">
                                 <rect key="frame" x="96" y="270" width="185" height="57"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="Start"/>
@@ -203,25 +197,31 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="yzx-UA-8sS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stopwatch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cu-cr-89l">
+                                <rect key="frame" x="63" y="41" width="251" height="44"/>
+                                <color key="backgroundColor" red="0.5136045145" green="1" blue="0.20933802069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="38"/>
+                                <color key="highlightedColor" red="0.5136045145" green="1" blue="0.20933802069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.5136045145" green="1" blue="0.20933802069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zcR-Eg-Ey2" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="107" id="2Wd-XL-AFw"/>
-                            <constraint firstItem="6cu-cr-89l" firstAttribute="centerX" secondItem="pP3-gT-OhI" secondAttribute="centerX" id="47k-JW-7qx"/>
+                            <constraint firstItem="6cu-cr-89l" firstAttribute="centerX" secondItem="pP3-gT-OhI" secondAttribute="centerX" constant="1" id="47k-JW-7qx"/>
                             <constraint firstItem="3Ce-xh-dEz" firstAttribute="top" secondItem="M3a-Bm-ivY" secondAttribute="bottom" constant="40" id="5tY-NQ-Blm"/>
                             <constraint firstItem="6cu-cr-89l" firstAttribute="centerX" secondItem="9GL-kU-TOt" secondAttribute="centerX" id="8W3-LL-57x"/>
                             <constraint firstItem="3Ce-xh-dEz" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="87" id="BWi-Db-1Gb"/>
                             <constraint firstItem="3nw-bc-kFO" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="96" id="GS8-FP-Pni"/>
-                            <constraint firstItem="6cu-cr-89l" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="85" id="GzY-33-R7j"/>
+                            <constraint firstItem="6cu-cr-89l" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="63" id="GzY-33-R7j"/>
                             <constraint firstItem="zcR-Eg-Ey2" firstAttribute="top" secondItem="3Ce-xh-dEz" secondAttribute="bottom" constant="51" id="Jv6-Xq-Eq4"/>
                             <constraint firstItem="3nw-bc-kFO" firstAttribute="top" secondItem="9GL-kU-TOt" secondAttribute="bottom" constant="48" id="Llk-S2-M9U"/>
                             <constraint firstItem="3Ce-xh-dEz" firstAttribute="centerX" secondItem="zcR-Eg-Ey2" secondAttribute="centerX" id="Plh-0i-bYI"/>
                             <constraint firstItem="M3a-Bm-ivY" firstAttribute="centerX" secondItem="pP3-gT-OhI" secondAttribute="centerX" id="RJY-mY-DN3"/>
-                            <constraint firstItem="6cu-cr-89l" firstAttribute="top" secondItem="ceA-bZ-gg4" secondAttribute="top" constant="29" id="SLx-oU-6Ma"/>
+                            <constraint firstItem="6cu-cr-89l" firstAttribute="top" secondItem="ceA-bZ-gg4" secondAttribute="top" constant="21" id="SLx-oU-6Ma"/>
                             <constraint firstItem="M3a-Bm-ivY" firstAttribute="top" secondItem="3nw-bc-kFO" secondAttribute="bottom" constant="36" id="bah-Xu-9nD"/>
                             <constraint firstItem="M3a-Bm-ivY" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="95" id="c98-1e-cwT"/>
                             <constraint firstItem="9GL-kU-TOt" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="107" id="gS7-Z2-Sza"/>
-                            <constraint firstItem="9GL-kU-TOt" firstAttribute="top" secondItem="6cu-cr-89l" secondAttribute="bottom" constant="57" id="hjx-3m-pxD"/>
+                            <constraint firstItem="9GL-kU-TOt" firstAttribute="top" secondItem="6cu-cr-89l" secondAttribute="bottom" constant="65" id="hjx-3m-pxD"/>
                             <constraint firstItem="3nw-bc-kFO" firstAttribute="centerX" secondItem="3Ce-xh-dEz" secondAttribute="centerX" id="ota-w9-Mdh"/>
                             <constraint firstItem="9GL-kU-TOt" firstAttribute="centerX" secondItem="3nw-bc-kFO" secondAttribute="centerX" id="sT2-If-KGT"/>
                         </constraints>
