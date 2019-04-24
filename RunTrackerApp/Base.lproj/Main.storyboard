@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="137" y="864"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="C7N-7p-btv">
             <objects>
-                <viewController id="hsc-5q-pBo" sceneMemberID="viewController">
+                <viewController id="hsc-5q-pBo" customClass="MapViewController" customModule="RunTrackerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="irO-4V-ihe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,6 +99,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="h7e-NP-a9N"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="QO1-Wl-jPa" id="QEf-I7-6Lc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pia-46-8qL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
