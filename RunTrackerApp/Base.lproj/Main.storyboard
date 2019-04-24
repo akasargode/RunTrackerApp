@@ -176,8 +176,8 @@
                                     <action selector="resetTimer:" destination="Lh1-Mg-Yhr" eventType="touchUpInside" id="Nth-W3-aKp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GL-kU-TOt">
-                                <rect key="frame" x="107" y="150" width="162" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GL-kU-TOt">
+                                <rect key="frame" x="0.0" y="150" width="375" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -212,7 +212,7 @@
                             <constraint firstItem="zcR-Eg-Ey2" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="107" id="2Wd-XL-AFw"/>
                             <constraint firstItem="6cu-cr-89l" firstAttribute="centerX" secondItem="pP3-gT-OhI" secondAttribute="centerX" constant="1" id="47k-JW-7qx"/>
                             <constraint firstItem="3Ce-xh-dEz" firstAttribute="top" secondItem="M3a-Bm-ivY" secondAttribute="bottom" constant="40" id="5tY-NQ-Blm"/>
-                            <constraint firstItem="6cu-cr-89l" firstAttribute="centerX" secondItem="9GL-kU-TOt" secondAttribute="centerX" id="8W3-LL-57x"/>
+                            <constraint firstItem="6cu-cr-89l" firstAttribute="centerX" secondItem="9GL-kU-TOt" secondAttribute="centerX" constant="1" id="8W3-LL-57x"/>
                             <constraint firstItem="3Ce-xh-dEz" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="87" id="BWi-Db-1Gb"/>
                             <constraint firstItem="3nw-bc-kFO" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="96" id="GS8-FP-Pni"/>
                             <constraint firstItem="6cu-cr-89l" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="63" id="GzY-33-R7j"/>
@@ -223,10 +223,10 @@
                             <constraint firstItem="6cu-cr-89l" firstAttribute="top" secondItem="ceA-bZ-gg4" secondAttribute="top" constant="21" id="SLx-oU-6Ma"/>
                             <constraint firstItem="M3a-Bm-ivY" firstAttribute="top" secondItem="3nw-bc-kFO" secondAttribute="bottom" constant="36" id="bah-Xu-9nD"/>
                             <constraint firstItem="M3a-Bm-ivY" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="95" id="c98-1e-cwT"/>
-                            <constraint firstItem="9GL-kU-TOt" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" constant="107" id="gS7-Z2-Sza"/>
+                            <constraint firstItem="9GL-kU-TOt" firstAttribute="leading" secondItem="ceA-bZ-gg4" secondAttribute="leading" id="gS7-Z2-Sza"/>
                             <constraint firstItem="9GL-kU-TOt" firstAttribute="top" secondItem="6cu-cr-89l" secondAttribute="bottom" constant="65" id="hjx-3m-pxD"/>
                             <constraint firstItem="3nw-bc-kFO" firstAttribute="centerX" secondItem="3Ce-xh-dEz" secondAttribute="centerX" id="ota-w9-Mdh"/>
-                            <constraint firstItem="9GL-kU-TOt" firstAttribute="centerX" secondItem="3nw-bc-kFO" secondAttribute="centerX" id="sT2-If-KGT"/>
+                            <constraint firstItem="9GL-kU-TOt" firstAttribute="centerX" secondItem="3nw-bc-kFO" secondAttribute="centerX" constant="-1" id="sT2-If-KGT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ceA-bZ-gg4"/>
                     </view>
