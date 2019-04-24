@@ -15,9 +15,9 @@ class StopwatchViewController: UIViewController {
     @IBOutlet weak var pauseButton: UIButton!
     @objc func UpdateTimer() {
         counter = counter + 0.1
-        //timeLabel.text = String(format: "%.1f", counter)
-        timeLabel.text = String(format: "mm:ss:SSS", counter)
+        timeLabel.text = String(format: "%.1f", counter)
     }
+    
     @IBAction func startTimer(_ sender: Any) {
         if(isPlaying) {
             return
