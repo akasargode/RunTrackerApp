@@ -17,7 +17,6 @@ class StopwatchViewController: UIViewController {
         counter = counter + 0.1
         timeLabel.text = String(format: "%.1f", counter)
     }
-    
     @IBAction func startTimer(_ sender: Any) {
         if(isPlaying) {
             return
@@ -29,8 +28,8 @@ class StopwatchViewController: UIViewController {
     }
     
     @IBAction func pauseTimer(_ sender: Any) {
-        startButton.isEnabled = true
-        pauseButton.isEnabled = false
+        startButton.isEnabled = false
+        pauseButton.isEnabled = true
         timer.invalidate()
         isPlaying = false
     }
@@ -52,6 +51,6 @@ class StopwatchViewController: UIViewController {
         timeLabel.text = String(counter)
         pauseButton.isEnabled = false
     }
-    
-    
 }
+
+
