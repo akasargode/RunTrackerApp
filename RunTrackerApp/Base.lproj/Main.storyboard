@@ -91,12 +91,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QO1-Wl-jPa">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QO1-Wl-jPa">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QO1-Wl-jPa" firstAttribute="leading" secondItem="irO-4V-ihe" secondAttribute="leading" id="Bvc-UE-yc9"/>
+                            <constraint firstItem="QO1-Wl-jPa" firstAttribute="bottom" secondItem="h7e-NP-a9N" secondAttribute="bottom" id="OD5-5N-Y3I"/>
+                            <constraint firstAttribute="trailing" secondItem="QO1-Wl-jPa" secondAttribute="trailing" id="VzK-78-sa2"/>
+                            <constraint firstItem="QO1-Wl-jPa" firstAttribute="top" secondItem="irO-4V-ihe" secondAttribute="top" id="fAa-dR-KTo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h7e-NP-a9N"/>
                     </view>
                     <connections>

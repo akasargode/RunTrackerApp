@@ -34,4 +34,22 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         region = MKCoordinateRegion(center: center, span: span)
         mapView.setRegion(region, animated: true)
     }
+    
+    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = "preserve"
+        request.region = region
+        let search = MKLocalSearch (request: request)
+        search.start { (response, Error) in
+            if let response = response {
+                for mapItem in response.mapItems {
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = mapItem.placemark.coordinate
+                    annotation.title = mapItem.name
+                    self.mapView.addAnnotation(annotation)
+                    self.mapItems.append(mapItem)
+                }
+            }
+        }
+    }
 }
