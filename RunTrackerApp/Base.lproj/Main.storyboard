@@ -234,6 +234,7 @@
                     <connections>
                         <outlet property="pauseButton" destination="M3a-Bm-ivY" id="lje-nd-BZp"/>
                         <outlet property="startButton" destination="3nw-bc-kFO" id="JPq-ue-XFp"/>
+                        <outlet property="timeLabel" destination="Kiq-aG-M7g" id="fwL-QE-g5H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5a-Cs-qKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
