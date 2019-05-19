@@ -10,45 +10,72 @@ import UIKit
 
 class StopwatchViewController: UIViewController {
     
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var pauseButton: UIButton!
-    @objc func UpdateTimer() {
-        counter = counter + 0.1
-        timeLabel.text = String(format: "%.1f", counter)
-    }
-    @IBAction func startTimer(_ sender: Any) {
-        if(isPlaying) {
-            return
-        }
-        startButton.isEnabled = false
-        pauseButton.isEnabled = true
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTimer), userInfo: nil, repeats: true)
-        isPlaying = true
-    }
+    @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var minuteLabel: UILabel!
+    @IBOutlet weak var hourLabel: UILabel!
     
-    @IBAction func pauseTimer(_ sender: Any) {
-        startButton.isEnabled = false
-        pauseButton.isEnabled = true
-        timer.invalidate()
-        isPlaying = false
-    }
-    
-    @IBAction func resetTimer(_ sender: Any) {
-        startButton.isEnabled = true
-        pauseButton.isEnabled = false
-        timer.invalidate()
-        isPlaying = false
-        counter = 0.0
-        timeLabel.text = String(counter)
-    }
-    var counter = 0.0
+    var time = Double(0)
+    var minutes = 0
+    var hours = 0
     var timer = Timer()
     
-    var isPlaying = false
     override func viewDidLoad() {
-        super.viewDidLoad()
-        timeLabel.text = String(counter)
-        pauseButton.isEnabled = false
+        equalOut()
+    }
+    
+    @objc func action() {
+        time += 1
+        equalOut()
+        
+        if time == 60 {
+            minutes += 1
+            time = 0
+            equalOut()
+        }
+        
+        if minutes == 60 {
+            hours += 1
+            minutes = 0
+            time = 0
+            equalOut()
+        }
+    }
+    
+    @IBAction func start(_ sender: Any) {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(StopwatchViewController.action), userInfo: nil, repeats: true)
+    }
+    
+    @IBAction func pause(_ sender: Any) {
+        timer.invalidate()
+    }
+    
+    @IBAction func reset(_ sender: Any) {
+        timer.invalidate()
+        time = 0
+        minutes = 0
+        hours = 0
+        equalOut()
+    }
+    
+    func equalOut() {
+        secondLabel.text = String(time)
+        minuteLabel.text = String(minutes)
+        hourLabel.text = String(hours)
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        time = Double(secondLabel.text!)!
+        minutes = Int(minuteLabel.text!)!
+        hours = Int(hourLabel.text!)!
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "backFromStopwatch" {
+            if let dvc = segue.destination as? ViewController {
+                dvc.timeV = self.time
+                dvc.minutesV = self.minutes
+                dvc.hoursV = self.hours
+            }
+        }
     }
 }
